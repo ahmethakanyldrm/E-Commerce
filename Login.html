@@ -31,6 +31,7 @@
 
 <body>
 
+    <!-- NavBar  -->
     <nav class="navbar navbar-expand-md navbar-light bg-light">
         <a class="navbar-brand" href="HomePage.html">Hepsi
             Şurada</a>
@@ -56,18 +57,21 @@
             <ul class="navbar-nav navbar-right">
                 <!-- Kayıt Ol -->
                 <li class="nav-item">
-                    <a class="nav-link" href="Register.html">Kayıt Ol</a>
+                    <a class="nav-link" href="Register.html">
+                        <span class="fa fa-user-plus mr-2"></span> Kayıt Ol</a>
                 </li>
                 <!-- Giriş -->
                 <li class="nav-item">
-                    <a class="nav-link" href="Login.html">Giriş</a>
+                    <a class="nav-link" href="Login.html">
+                        <span class="fa fa-sign-in mr-2"></span>Giriş</a>
                 </li>
 
                 <!-- Profil -->
 
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="ddlProfile" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">Profil</a>
+                        aria-haspopup="true" aria-expanded="false">
+                        <span class="fa fa-user mr-2"></span>Profil</a>
                     <div class="dropdown-menu" aria-labelledby="ddlProfile">
                         <a class="dropdown-item" href="MyProfile.html">Profil
                             Görüntüle</a>
@@ -80,7 +84,8 @@
                 <!-- Sepet -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="ddlCart" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">Sepetim</a>
+                        aria-haspopup="true" aria-expanded="false">
+                        <span class="fa fa-shopping-cart mr-2"></span>Sepetim</a>
                     <div class="dropdown-menu" aria-labelledby="ddlCart">
                         <a class="dropdown-item" href="MyProfile.html">Ürün 1</a>
                         <a class="dropdown-item" href="Adresses.html">Ürün 2</a>
@@ -94,7 +99,8 @@
                 <!-- Mesajlar -->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="ddlMessages" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">Mesajlar</a>
+                        aria-haspopup="true" aria-expanded="false">
+                        <span class="fa fa-envelope mr-2"></span>Mesajlar</a>
                     <div class="dropdown-menu" aria-labelledby="ddlMessages">
                         <a class="dropdown-item" href="Message.html">Mesaj 1</a>
                         <a class="dropdown-item" href="Message.html">Mesaj 2</a>
@@ -105,11 +111,58 @@
                 <!--End Mesajlar -->
 
                 <li class="nav-item">
-                    <a class="nav-link" href="HomePage.html">Çıkış</a>
+                    <a class="nav-link" href="HomePage.html">
+                        <span class="fa fa-sign-out mr-2"></span>Çıkış</a>
                 </li>
             </ul>
         </div>
     </nav>
+    <!-- End NavBar -->
+
+    <div class="container">
+        <div class="row my-4">
+            <div class="col-md-4 offset-md-4 my-4">
+                <form action="">
+                    <div class="card card-default shadow">
+                        <div class="card-header">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h3>
+                                        <span class="fa fa-sign-in fa-2x"></span>
+                                    </h3>
+                                </div>
+                                <div class="col-md-9 text-right">
+                                    <h2>Giriş Yap</h2>
+                                    <small>Lütfen E-Posta ve Şifrenizi Giriniz</small>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <input type="email" name="email" id="email" placeholder="abc@abc.com"
+                                    class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" name="password" id="password" placeholder="password"
+                                    class="form-control">
+                            </div>
+                        </div>
+                        <div class="card-footer text-muted text-right">
+                            <a href="ForgotPassword.html" class="btn btn-warning">
+                                <span class="fa fa-asterisk mr-2"></span>Şifremi Unuttum
+                            </a>
+                            <button class="btn btn-success" type="submit">
+                                <span class="fa fa-sign-in mr-2"></span>Giriş Yap
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
 
 </body>
 
