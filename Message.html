@@ -100,52 +100,77 @@
     <div class="container">
 
         <!-- content begin -->
-        <div class="row mt-4">
-            <div class="col-md-12 my-4">
-                <h2>Profil Sayfası</h2>
-                <hr>
+        <div class="row mt-4 mb-2">
+            <div class="col-md-12">
+                <h3 class="text-danger">Konu : Lorem, ipsum dolor.</h3>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-md-4 text-center">
-                <img src="https://via.placeholder.com/150" class="rounded-circle img-fluid img-thumbnail">
+        <div class="row my-2">
+            <div class="col-md-12">
+
+                <div class="card bg-default my-4">
+                    <div class="card-header">
+                        <small class="text-muted">Kimden : Ahmet Hakan Yıldırım</small>
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat deleniti explicabo
+                            aut nobis, vel, placeat distinctio ad
+                            aperiam excepturi exercitationem voluptatum nemo! Fugiat ab est quia, illo
+                            laudantium eius placeat!
+                        </p>
+                    </div>
+                    <div class="card-footer text-right">
+                        <small class="text-muted">
+                            Tarih : 26.03.2022 13:56
+                        </small>
+                    </div>
+                </div>
+
             </div>
-            <div class="col-md-8">
-                <div class="form-group row">
-                    <label class="text-danger col-md-2"> İsim :</label>
-                    <label class="col-md-10">Ahmet Hakan </label>
+
+            <div class="col-md-12">
+
+                <div class="card bg-default my-4">
+                    <div class="card-header">
+                        <small class="text-muted">Kimden : Ahmet Hakan Yıldırım</small>
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat deleniti explicabo
+                            aut nobis, vel, placeat distinctio ad
+                            aperiam excepturi exercitationem voluptatum nemo! Fugiat ab est quia, illo
+                            laudantium eius placeat!
+                        </p>
+                    </div>
+                    <div class="card-footer text-right">
+                        <small class="text-muted">
+                            Tarih : 26.03.2022 13:56
+                        </small>
+                    </div>
                 </div>
 
-                <div class="form-group row">
-                    <label class="text-danger col-md-2"> Soyad :</label>
-                    <label class="col-md-10">Yıldırım</label>
-                </div>
-
-                <div class="form-group row">
-                    <label class="text-danger col-md-2"> E-posta :</label>
-                    <label class="col-md-10">ahakan.yildirim336@gmail.com</label>
-                </div>
-
-                <div class="form-group row">
-                    <label class="text-danger col-md-2"> Biyografi :</label>
-                    <label class="col-md-10">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed laudantium ipsum neque?
-                        Magnam reiciendis officiis vel, vero
-                        ea quis at distinctio ex cumque, maxime nemo aperiam deleniti? Dolorum, harum iure!
-                    </label>
-                </div>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-md-12 text-right">
-                <a href="#" class="btn btn-warning" data-toggle="modal" data-target="#modalEdit">
-                    <span class="fa fa-edit mr-2"></span>Düzenle
-                </a>
-                <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#modalDelete">
-                    <span class="fa fa-trash mr-2"></span>Sil
-                </a>
+        <div class="row my-2">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <h4>Cevabınız</h4>
+                    <hr>
+                </div>
+
+                <div class="form-group">
+                    <textarea cols="30" rows="5" name="messagebody" id="messagebody" placeholder="cevabınız.."
+                        class="form-control"></textarea>
+                </div>
+
+                <div class="form-group text-right">
+                    <button type="button" class="btn btn-success">
+                        <span class="fa fa-send mr-2"></span>Gönder
+                    </button>
+                </div>
             </div>
         </div>
 
@@ -153,84 +178,8 @@
 
     </div>
 
-    <!-- Modal Edit -->
-    <div class="modal fade" id="modalEdit" tabindex="-1" role="dialog" data-backdrop="static"
-        aria-labelledby="editModalTitle" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="editModalTitle">Düzenle</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="form-group">
-                        <input type="text" name="name" id="name" placeholder="İsim" class="form-control" />
-                    </div>
-
-                    <div class="form-group">
-                        <input type="text" name="surname" id="surname" placeholder="Soyad"
-                            class="form-control" />
-                    </div>
-
-                    <div class="form-group">
-                        <input type="email" name="editemail" id="editemail" placeholder="E-Mail"
-                            class="form-control" />
-                    </div>
-
-                    <div class="form-group">
-                        <textarea cols="30" rows="5" name="editbio" id="editbio" placeholder="Biyografi"
-                            class="form-control"></textarea>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
-                        <span class="fa fa-close mr-2"></span>Kapat
-                    </button>
-                    <button type="button" class="btn btn-warning">
-                        <span class="fa fa-save mr-2"></span>Kaydet
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal Delete -->
-    <div class="modal fade" id="modalDelete" tabindex="-1" role="dialog" aria-labelledby="deleteModalTitle"
-        aria-hidden="true" data-backdrop="static">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title" id="deleteModalTitle">Sil</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-md-4 md-offset-1">
-                            <center>
-                                <span class="fa fa-trash text-danger fa-3x mr-2"></span>
-                            </center>
-                        </div>
-                        <div class="col-md-7 text-center">
-                            <p>Hesabınızı silmek istediğinize emin misiniz?</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">
-                        <span class="fa fa-close mr-2"></span>Hayır</button>
-                    <button type="button" class="btn btn-success" data-dismiss="modal">
-                        <span class="fa fa-check mr-2"></span>Evet</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- footer begin -->
-    <div class="card card-default text-center fixed-bottom d-none d-sm-block">
+    <div class="card card-default text-center d-none d-sm-block">
         <div class="card-body">
             <h5 class="card-title text-muted">Online Alışveriş Sitesi</h5>
             <div>

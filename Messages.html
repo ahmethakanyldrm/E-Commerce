@@ -102,90 +102,133 @@
         <!-- content begin -->
         <div class="row mt-4">
             <div class="col-md-12 my-4">
-                <h2>Profil Sayfası</h2>
-                <hr>
+                <h2>Mesajlarım</h2>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-md-4 text-center">
-                <img src="https://via.placeholder.com/150" class="rounded-circle img-fluid img-thumbnail">
-            </div>
-            <div class="col-md-8">
-                <div class="form-group row">
-                    <label class="text-danger col-md-2"> İsim :</label>
-                    <label class="col-md-10">Ahmet Hakan </label>
-                </div>
-
-                <div class="form-group row">
-                    <label class="text-danger col-md-2"> Soyad :</label>
-                    <label class="col-md-10">Yıldırım</label>
-                </div>
-
-                <div class="form-group row">
-                    <label class="text-danger col-md-2"> E-posta :</label>
-                    <label class="col-md-10">ahakan.yildirim336@gmail.com</label>
-                </div>
-
-                <div class="form-group row">
-                    <label class="text-danger col-md-2"> Biyografi :</label>
-                    <label class="col-md-10">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed laudantium ipsum neque?
-                        Magnam reiciendis officiis vel, vero
-                        ea quis at distinctio ex cumque, maxime nemo aperiam deleniti? Dolorum, harum iure!
-                    </label>
-                </div>
+            <div class="col-md-12">
+                <table class="table table-striped table-hover text-center table-sm">
+                    <thead>
+                        <tr>
+                            <th>Tarih</th>
+                            <th>Kimden</th>
+                            <th>Konu</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>10.02.2008</td>
+                            <td>
+                                Ahmet Hakan Yıldırım
+                            </td>
+                            <td>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, vero. Nobis,
+                                ex?
+                            </td>
+                            <td>
+                                <a href="Message.html" class="btn btn-info btn-sm">
+                                    <span class="fa fa-eye"></span>
+                                </a>
+                                <button class="btn btn-danger btn-sm" data-toggle="modal"
+                                    data-target="#deleteModal">
+                                    <span class="fa fa-trash"></span>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10.02.2008</td>
+                            <td>
+                                Ahmet Hakan Yıldırım
+                            </td>
+                            <td>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, vero. Nobis,
+                                ex?
+                            </td>
+                            <td>
+                                <a href="Message.html" class="btn btn-info btn-sm">
+                                    <span class="fa fa-eye"></span>
+                                </a>
+                                <button class="btn btn-danger btn-sm" data-toggle="modal"
+                                    data-target="#deleteModal">
+                                    <span class="fa fa-trash"></span>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10.02.2008</td>
+                            <td>
+                                Ahmet Hakan Yıldırım
+                            </td>
+                            <td>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, vero. Nobis,
+                                ex?
+                            </td>
+                            <td>
+                                <a href="Message.html" class="btn btn-info btn-sm">
+                                    <span class="fa fa-eye"></span>
+                                </a>
+                                <button class="btn btn-danger btn-sm" data-toggle="modal"
+                                    data-target="#deleteModal">
+                                    <span class="fa fa-trash"></span>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="4" class="text-right mt-4">
+                                <button class="btn btn-success mt-4" data-toggle="modal"
+                                    data-target="#newMessageModal">
+                                    <span class="fa fa-plus mr-2"></span>Yeni Measj
+                                </button>
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-md-12 text-right">
-                <a href="#" class="btn btn-warning" data-toggle="modal" data-target="#modalEdit">
-                    <span class="fa fa-edit mr-2"></span>Düzenle
-                </a>
-                <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#modalDelete">
-                    <span class="fa fa-trash mr-2"></span>Sil
-                </a>
-            </div>
-        </div>
 
         <!-- content end -->
 
     </div>
 
     <!-- Modal Edit -->
-    <div class="modal fade" id="modalEdit" tabindex="-1" role="dialog" data-backdrop="static"
+    <div class="modal fade" id="newMessageModal" tabindex="-1" role="dialog" data-backdrop="static"
         aria-labelledby="editModalTitle" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title" id="editModalTitle">Düzenle</h4>
+                    <h4 class="modal-title" id="editModalTitle">Yeni Mesaj</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <div class="form-group">
-                        <input type="text" name="name" id="name" placeholder="İsim" class="form-control" />
-                    </div>
 
                     <div class="form-group">
-                        <input type="text" name="surname" id="surname" placeholder="Soyad"
+                        <select class="form-control" id="message_type" name="message_type">
+                            <option value="1">Genel</option>
+                            <option value="2">Ürün Hakkında</option>
+                            <option value="3">Sipariş Hakkında</option>
+                        </select>
+                    </div>
+
+
+                    <div class="form-group">
+                        <input type="text" name="subject" id="subject" placeholder="Konu"
                             class="form-control" />
                     </div>
 
                     <div class="form-group">
-                        <input type="email" name="editemail" id="editemail" placeholder="E-Mail"
-                            class="form-control" />
-                    </div>
-
-                    <div class="form-group">
-                        <textarea cols="30" rows="5" name="editbio" id="editbio" placeholder="Biyografi"
+                        <textarea cols="30" rows="5" name="message" id="message" placeholder="Mesajınız"
                             class="form-control"></textarea>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">
                         <span class="fa fa-close mr-2"></span>Kapat
                     </button>
                     <button type="button" class="btn btn-warning">
@@ -197,12 +240,12 @@
     </div>
 
     <!-- Modal Delete -->
-    <div class="modal fade" id="modalDelete" tabindex="-1" role="dialog" aria-labelledby="deleteModalTitle"
+    <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalTitle"
         aria-hidden="true" data-backdrop="static">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title" id="deleteModalTitle">Sil</h4>
+                    <h4 class="modal-title" id="deleteModalTitle">Mesajı Sil</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
@@ -215,7 +258,7 @@
                             </center>
                         </div>
                         <div class="col-md-7 text-center">
-                            <p>Hesabınızı silmek istediğinize emin misiniz?</p>
+                            <p>Mesajı silmek istediğinize emin misiniz?</p>
                         </div>
                     </div>
                 </div>
